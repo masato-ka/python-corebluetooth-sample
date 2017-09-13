@@ -19,6 +19,11 @@ Sample source for CoreBlutooth via PyObjC(Python)
 |UV indicate|?|
 |Noise Level|dB|
 
+## Version
+
+Mac OSX 10.11.6
+Python 2.7.x
+
 ## License
 
 [MIT LICENCE](https://github.com/masato-ka/geo-hash-potate/blob/master/LICENSE.txt)
@@ -36,19 +41,22 @@ $pip install pyobjc
 ~~~~
 
 When you encount error about libffi, try below it.
-~~~
+
+~~~~
 $brew install pkg-config libffi
 $export PKG_CONFIG_PATH=/usr/local/Cellar/libffi/3.0.13/lib/pkgconfig/
-~~~
+~~~~
 
 I recommend try in new enviroment what create using virtualenv. 
 
 
 ##Run script
 
-~~~
-$git clone 
-$
+~~~~
+$git clone https://github.com/masato-ka/python-corebluetooth-sample.git
+$cd python-corebluetooth-sample
+$python corebluetooth_sample.py
+~~~~
 
 # Author
 
