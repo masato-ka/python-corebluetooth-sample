@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# encoding: utf-8
+# -*- coding: utf-8 -*-
 
 import struct
 
@@ -36,8 +36,6 @@ class BleClass(object):
     def peripheral_didDiscoverCharacteristicsForService_error_(self, peripheral, service, error):
 
         for characteristic in self.service.characteristics():
-#            print wx2_characteristic_data.UUIDString()
-#            print characteristic.UUID().UUIDString()
             if characteristic.properties() == 18:
                 peripheral.readValueForCharacteristic_(characteristic)
                 break
@@ -92,5 +90,4 @@ def decode_value(value, multi=1.0):
 if "__main__" == __name__:
     central_manager = CBCentralManager.alloc()
     central_manager.initWithDelegate_queue_options_(BleClass(), None, None)
-#    AppHelper.callLater(0.1, comms.loop)
     AppHelper.runConsoleEventLoop()
