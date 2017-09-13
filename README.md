@@ -12,7 +12,7 @@ Sample source for CoreBlutooth via PyObjC(Python)
 
 |Sensor name|unit|
 |:----|:----|
-|Templature|Celusiuse|
+|Templature|degree celsius|
 |Humidity|%|
 |Air Pressure|hPa|
 |lumix|lux|
